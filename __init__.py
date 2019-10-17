@@ -1,6 +1,6 @@
 from __future__ import print_function
 from argparse import ArgumentParser
-from dna import print_dict
+from text_utils import print_dict
 
 class ArgParser(object):
     def __init__(self, ps=None, name=None):
