@@ -1,6 +1,14 @@
 from __future__ import print_function
 from argparse import ArgumentParser
-from text_utils import print_dict
+#from text_utils import print_dict
+
+def print_dict(dic, sorted_keys=True, end='\n'):
+    if sorted_keys:
+        keys = sorted(dic.keys())
+    else:
+        keys = dic.keys()
+    for k in keys:
+        print(k, dic[k], end=end)
 
 class ArgParser(object):
     def __init__(self, ps=None, name=None):
